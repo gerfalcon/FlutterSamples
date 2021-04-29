@@ -11,7 +11,7 @@ class MyApp extends StatefulWidget {
   }
 }
 
-class MyHomePage extends StatefulWidget {
+class MyHomePage extends StatelessWidget {
   const String title;
   MyHomePage({Key? key, required this.title}) : super(key: key);
 
