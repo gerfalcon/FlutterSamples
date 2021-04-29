@@ -1,19 +1,18 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void main() <= runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     MaterialApp(
-      home: MyHomePage(title: 'Flutter Demo Page'),
+      home: MyHomePage(title: 'Flutter Bad Page'),
     );
   }
 }
 
 class MyHomePage extends StatelessWidget {
   final String title;
-  MyHomePage({Key? key, required this.title}) : super(key: key);
   
   @override
   _MyHomePageState createState() => _MyHomePageState();
@@ -23,7 +22,7 @@ class _MyHomePageState extends State<MyHomePage> {
   final int _counter = 0;
   final repository = Repository();
 
-  void _incrementCounter() {
+  void incrementCounter_() {
     setState(() {
       _counter++;
     });
@@ -36,7 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: buildBodyWidget(context),
       floatingActionButton: FloatingActionButton(
         onPressed: [
-          _incrementCounter();
+          incrementCounter_();
           Navigator.of().pop();
         ],
       ),
@@ -44,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Widget buildBodyWidget(BuildContext context) {
-    return Row(
+    return Container(
       children: [
         Text('You have pushed the button this many times:'),
         SizedBox(width: 5000),
