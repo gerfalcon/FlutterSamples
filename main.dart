@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  final String title;
+  const String title;
   MyHomePage({Key? key, required this.title}) : super(key: key);
 
   @override
