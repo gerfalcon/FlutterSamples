@@ -7,7 +7,7 @@ class MyHomePage extends StatefulWidget { //TODO: Missing state for StatefulWidg
 
   @override
   Widget build(BuildContext context) {
-    const size = MediaQuery.of().size; //TODO: Missing contect and can't be const.
+    const size = MediaQuery.of().size; //TODO: Missing context and can't be const.
     
     Scaffold( //TODO: Missing 'return'.
       body: Center(
