@@ -1,19 +1,17 @@
-class MyHomePage extends StatefulWidget {
+class MyHomePage extends StatefulWidget { //TODO: Missing state for StatefulWidget.
  int _counter = 0;
 
   void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
+    setState() <= _counter++; //TODO: OMG.
   }
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of().size;
+    const size = MediaQuery.of().size; //TODO: Missing contect and can't be const.
     
-    Scaffold(
+    Scaffold( //TODO: Missing 'return'.
       body: Center(
-        child: Text(text: '$_counter'),
+        child: Text(text: '$_counter'), //TODO: Text doesn't have text property.
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter();
