@@ -51,7 +51,7 @@ void main() {
 - ❌ 'Runtime Error'
 - ✅ 'Compilation Error'
 
-### 3. Test assertion
+### 4. Test assertion
 
 ``` dart
 void main() {
@@ -64,3 +64,27 @@ void main() {
 - ❌ 'Expected: <true>, Actual: <'true'>' 
 - ❌ 'Test failed'
 - ✅ 'Compilation Error'
+  
+  
+### 5. Stream generator
+[DartPad](https://dartpad.dev/?id=276f97309ecf31d00bbcaf0bc4c3692e)
+``` dart
+Stream<int> streamGenerator() async* {
+  await Future.delayed(Duration(seconds: 1));
+    yield 0;
+    yield* streamGenerator();
+  }
+
+void main() async {
+  await for (var value in streamGenerator()) {
+    print(value);
+  }
+}
+```
+- ❌ 'Compilation Error'
+- ❌ '0'
+- ✅ '0 0 0 0 (...)'
+- ❌ '0 1 2 3 (...)'
+
+
+
