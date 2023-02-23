@@ -36,3 +36,17 @@ void main() {
 - ✅ 'abc'  
 - ❌ 'a b c' 
 - ❌ Compilation error
+
+### 3. Const DateTime
+
+[DartPad](https://dartpad.dev/?id=51b751c15cb545dff46c904b46e103e5)
+``` dart
+void main() {
+  const date = DateTime.now();
+  print(date);
+}
+```
+- ❌ 'Prints compile-time DateTime' 
+- ❌ 'Prints run-time DateTime' 
+- ❌ 'Runtime Error'
+- ✅ 'Compilation Error'
