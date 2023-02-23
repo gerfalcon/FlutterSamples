@@ -81,10 +81,10 @@ void main() async {
   }
 }
 ```
-- ? 'Compilation Error'
-- ? '0'
-- ? '0 0 0 0 (...)'
-- ? '0 1 2 3 (...)'
+- ❌ 'Compilation Error'
+- ❌ '0'
+- ✅ '0 0 0 0 (...)'
+- ❌ '0 1 2 3 (...)'
 
 
 
