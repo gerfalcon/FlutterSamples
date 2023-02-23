@@ -86,5 +86,24 @@ void main() async {
 - ✅ '0 0 0 0 (...)'
 - ❌ '0 1 2 3 (...)'
 
+  
+  
+### 6. [Callable class with Future](https://dart.dev/guides/language/language-tour#callable-classes)
+[DartPad](https://dartpad.dev/?id=e1fff70f6b94b9a58a33a44931d68010)
+``` dart
+class ComplexUseCase {
+  Future<String> call(String text) async => text;
+}
+
+var useCase = ComplexUseCase();
+var out = useCase("Hellow world!");
+
+void main() async => print(await out);
+```
+- ✅ 'Hellow world'
+- ❌ Instance of '_Future<String>'
+- ❌ 'ComplexUseCase("Hello world!")'
+- ❌ 'out'
+
 
 
