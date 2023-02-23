@@ -105,5 +105,28 @@ void main() async => print(await out);
 - ❌ 'ComplexUseCase("Hello world!")'
 - ❌ 'out'
 
+  
+### 7. [Future]()
+[DartPad](https://dart.dev/codelabs/async-await)
+``` dart
+void asyncFun() async {
+  try {
+    throw Exception("");
+    print("0");
+  } catch (e) {
+    print("1");
+  } finally {
+    await Future.delayed(Duration(seconds: 1));
+    print("2");
+  }
+}
 
-
+void main() {
+  asyncFun();
+  print("3");
+}
+```
+- ✅ 'Hellow world'
+- ❌ Instance of '_Future<String>'
+- ❌ 'ComplexUseCase("Hello world!")'
+- ❌ 'out'
