@@ -154,3 +154,27 @@ void main() {
 - ✅ 100
 - ❌ dog
 - ❌ 'Compilation Error'
+  
+  
+### 9. Lists
+[DartPad](https://dartpad.dev/?id=2add3831431b4451ad6e3b5b55d7364f)
+``` dart
+void main() {
+  List<String> list1 = ['a', 'b', 'c'];
+  List<String> list2 = ['x', 'y'];
+  List<String>? listNullable = null;
+
+  List<String> lists = [
+    ...list1,
+    if (false) ...list2,
+    ...?listNullable,
+  ];
+  print(lists);
+}
+```
+
+- ❌ []
+- ✅ [a, b, c]
+- ❌ [a, b, c, x, y]
+- ❌ null
+  
