@@ -17,7 +17,7 @@ print('${y.ceil()}');
 - ✅ Uncaught Error: Unsupported operation  
 - ❌ 3 
 - ❌ 4 
-- ❌ double.infinity
+- ❌ 'double.infinity'
 
 
 
@@ -35,7 +35,7 @@ void main() {
 - ❌ 'a\nb\nc' 
 - ✅ 'abc'  
 - ❌ 'a b c' 
-- ❌ Compilation error
+- ❌ 'Compilation error'
 
 ### 3. Const DateTime
 
@@ -49,4 +49,18 @@ void main() {
 - ❌ 'Prints compile-time DateTime' 
 - ❌ 'Prints run-time DateTime' 
 - ❌ 'Runtime Error'
+- ✅ 'Compilation Error'
+
+### 3. Test assertion
+
+``` dart
+void main() {
+  test('My mom would be proud', () {
+    print(expect(true, true));
+  });
+}
+```
+- ❌ 'Test passed: 1' 
+- ❌ 'Expected: <true>, Actual: <'true'>' 
+- ❌ 'Test failed'
 - ✅ 'Compilation Error'
