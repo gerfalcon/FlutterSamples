@@ -106,8 +106,9 @@ void main() async => print(await out);
 - ❌ 'out'
 
   
-### 7. [Future]()
-[DartPad](https://dart.dev/codelabs/async-await)
+### 7. [Future](https://dart.dev/codelabs/async-await)
+[DartPad](https://dartpad.dev/?id=13fa16eac7aa6d77dee25bdb0d7aad58)
+
 ``` dart
 void asyncFun() async {
   try {
@@ -126,7 +127,30 @@ void main() {
   print("3");
 }
 ```
-- ✅ 'Hellow world'
-- ❌ Instance of '_Future<String>'
-- ❌ 'ComplexUseCase("Hello world!")'
-- ❌ 'out'
+- ❌ 0 1 2 3
+- ❌ 1 2 3
+- ✅ 1 3 2
+- ❌ 3
+  
+  
+  
+### 8. [TypeDef]()
+[DartPad](https://dartpad.dev/?id=f9f4d502881102470bc29b34749722c9)
+``` dart
+typedef Animal = String;
+typedef CuteFactor = int;
+
+void main() {
+  const Map<Animal, CuteFactor> trend = {
+    'old grumpy cat': 4,
+    'dog': 100,
+    'tRex': 1
+  };
+  print(trend['dog'] as CuteFactor);
+}
+```
+
+- ❌ trend['dog'] as CuteFactor
+- ✅ 100
+- ❌ dog
+- ❌ 'Compilation Error'
