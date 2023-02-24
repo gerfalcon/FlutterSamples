@@ -155,7 +155,7 @@ void main() {
 - ❌ dog
 - ❌ 'Compilation Error'
   
-  
+
 ### 9. Lists
 [DartPad](https://dartpad.dev/?id=2add3831431b4451ad6e3b5b55d7364f)
 ``` dart
@@ -177,4 +177,20 @@ void main() {
 - ✅ [a, b, c]
 - ❌ [a, b, c, x, y]
 - ❌ null
+  
+
+### 10. Platform
+❗❗❗❗ Given the code below, what **couldn't** print out to the console?
+``` dart
+void main() {
+    
+  print(Platform.operatingSystem.toString());
+  
+}
+```
+
+- ❌ fuchsia
+- ❌ windows
+- ❌ macos
+- ✅ iphone
   
