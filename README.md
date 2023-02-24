@@ -96,11 +96,11 @@ class ComplexUseCase {
 }
 
 var useCase = ComplexUseCase();
-var out = useCase("Hellow world!");
+var out = useCase("Hello world!");
 
 void main() async => print(await out);
 ```
-- ✅ 'Hellow world'
+- ✅ 'Hello world'
 - ❌ Instance of '_Future<String>'
 - ❌ 'ComplexUseCase("Hello world!")'
 - ❌ 'out'
