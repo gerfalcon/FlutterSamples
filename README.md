@@ -1,6 +1,10 @@
-# Flutter tasks
+In February '23, during the [Flutter Forward Extended meetup of Flutter Abu Dhabi and Dubai](https://www.linkedin.com/posts/flutter-ad_we-still-cant-get-over-how-great-yesterdays-activity-7035605328784207872-5ebD?utm_source=share&utm_medium=member_desktop), I gave the following **technical quiz game activity** for **50+ participants**.
+- [Meetup link](https://www.meetup.com/flutter-ad/events/291592951/)
+<p align="center">
+<img src="https://github.com/gerfalcon/gerfalcon/assets/15221068/46967774-7ebc-4ecd-83de-c1f740058e8b" width="500" alt=""/>
+</p> 
 
-
+# Flutter Quiz
 ## Given the code below, what will print out to the console?
 
 ### 1. [.ceil()](https://api.flutter.dev/flutter/dart-core/double/ceil.html)
