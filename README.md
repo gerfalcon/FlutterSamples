@@ -1,3 +1,14 @@
+# Flutter samples
+
+<p>
+  <a href="https://github.com/gerfalcon">
+    <img alt="GitHub: gerfalcon" src="https://img.shields.io/github/followers/gerfalcon?label=Follow&style=social" target="_blank" />
+  </a>
+  <a href="https://twitter.com/SandroMaglione">
+    <img alt="Twitter: gerfalcon" src="https://img.shields.io/twitter/follow/GerfalconVogel?style=social" target="_blank" />
+  </a>
+</p>
+
 In February '23, during the [Flutter Forward Extended meetup of Flutter Abu Dhabi and Dubai](https://www.linkedin.com/posts/flutter-ad_we-still-cant-get-over-how-great-yesterdays-activity-7035605328784207872-5ebD?utm_source=share&utm_medium=member_desktop), I gave the following **technical quiz game activity** for **50+ participants**.
 - [Meetup link](https://www.meetup.com/flutter-ad/events/291592951/)
 <p align="center">
